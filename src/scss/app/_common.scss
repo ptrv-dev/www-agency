@@ -28,6 +28,53 @@ p {
 	padding: 0;
 }
 
+.section {
+	padding: 120px 0;
+	// .section__suptitle
+
+	&__suptitle {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: calc(24 / 14);
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: $dark;
+		margin-bottom: 15px;
+	}
+
+	// .section__title
+
+	&__title {
+		font-weight: 600;
+		font-size: 48px;
+		line-height: calc(61 / 48);
+		color: $dark;
+	}
+
+	// .section__subtitle
+
+	&__subtitle {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: calc(25 / 14);
+
+		color: rgba($dark, 0.6);
+	}
+}
+
+.button {
+	background: #4270ec;
+	border-radius: 15px;
+	border: none;
+	padding: 16.5px 37px;
+
+	font-weight: 500;
+	font-size: 14px;
+	color: $white;
+
+	cursor: pointer;
+}
+
 @media (max-width: calc($container-width + 2 * $container-padding)) {
 	.container {
 		max-width: 768px;
