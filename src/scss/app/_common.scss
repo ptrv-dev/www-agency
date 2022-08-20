@@ -28,3 +28,8 @@ p {
 	padding: 0;
 }
 
+@media (max-width: calc($container-width + 2 * $container-padding)) {
+	.container {
+		max-width: 768px;
+	}
+}
