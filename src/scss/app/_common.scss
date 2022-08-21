@@ -80,3 +80,14 @@ p {
 		max-width: 768px;
 	}
 }
+
+@media (max-width: 425px) {
+	.section {
+		&__title {
+			font-size: 36px;
+		}
+		&__suptitle {
+			margin-bottom: 0;
+		}
+	}
+}
