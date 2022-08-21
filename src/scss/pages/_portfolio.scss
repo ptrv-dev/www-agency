@@ -1,0 +1,168 @@
+.portfolio {
+	// .portfolio__container
+
+	&__container {
+		align-items: center;
+	}
+
+	// .portfolio__header
+
+	&__header {
+		margin-bottom: 100px;
+	}
+
+	// .portfolio__suptitle
+
+	&__suptitle {
+	}
+
+	// .portfolio__title
+
+	&__title {
+	}
+
+	// .portfolio__text
+
+	&__text {
+		font-weight: 400;
+		line-height: calc(25 / 14);
+		margin-bottom: 17px;
+
+		letter-spacing: 0.03em;
+
+		color: rgba(0, 0, 0, 0.5);
+	}
+
+	// .portfolio__link
+
+	&__link {
+		display: flex;
+		align-items: center;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: calc(25 / 14);
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: $blue;
+		text-decoration: none;
+		svg {
+			margin-left: 9px;
+			fill: $blue;
+		}
+	}
+
+	// .portfolio__cards
+
+	&__cards {
+	}
+}
+.container {
+}
+.header-portfolio {
+	display: flex;
+	justify-content: space-between;
+
+	// .header-portfolio__col
+
+	&__col {
+		flex: 0 0 50%;
+		&:last-child {
+			flex: 0 0 45%;
+		}
+	}
+}
+.long-arrow-right-icon {
+}
+.cards-portfolio {
+	display: flex;
+	justify-content: space-between;
+
+	// .cards-portfolio__item
+
+	&__item {
+	}
+}
+.cards-portfolio-item {
+	position: relative;
+	flex: 0 0 calc(100% / 3 - 20px);
+	border-radius: 31px;
+	// .cards-portfolio-item__image
+
+	&__image {
+		width: 100%;
+		img {
+			display: block;
+		}
+	}
+
+	// .cards-portfolio-item__button
+
+	&__button {
+		position: absolute;
+		bottom: 30px;
+		right: 30px;
+		width: 50px;
+		height: 50px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		background: $white;
+
+		border-radius: 50%;
+		border: none;
+
+		cursor: pointer;
+		svg {
+			stroke: $blue;
+		}
+	}
+}
+@media (max-width: calc($container-width + 2 * $container-padding)) {
+	.portfolio {
+		&__header {
+			flex-direction: column;
+		}
+	}
+	.header-portfolio {
+		&__col {
+			flex: auto;
+			&:not(:last-child) {
+				margin-bottom: 25px;
+			}
+		}
+	}
+	.cards-portfolio-item {
+		&__button {
+			right: 15px;
+			bottom: 15px;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.cards-portfolio {
+		flex-wrap: wrap;
+		gap: 15px;
+		justify-content: center;
+	}
+	.cards-portfolio-item {
+		flex: 0 0 360px;
+	}
+}
+@media (max-width: 425px) {
+	.cards-portfolio-item {
+		flex: 0 0 100%;
+	}
+	.header-portfolio {
+		&__col {
+			flex: auto;
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+    .portfolio__header {
+        margin-bottom: 50px;
+    }
+}
