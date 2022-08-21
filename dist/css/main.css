@@ -98,6 +98,11 @@ p {
     margin-bottom: 0;
   }
 }
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+}
 .header {
   position: absolute;
   left: 0;
@@ -186,7 +191,7 @@ p {
     display: flex;
     padding-top: 125px;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     transition: bottom 0.3s;
   }
   .nav__list {
@@ -346,6 +351,9 @@ p {
   }
   .cards-main-item:not(:last-child) {
     margin-right: 0;
+  }
+  .main {
+    padding-top: 120px;
   }
   .main__col_row {
     flex: 0 1 auto;
