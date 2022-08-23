@@ -828,3 +828,98 @@ p {
     margin-bottom: 20px;
   }
 }
+.footer {
+  padding: 100px 0;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer__col {
+  flex: 0 0 25%;
+}
+.footer__col_small {
+  flex: 0 0 20%;
+}
+.footer__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5555555556;
+  color: #222136;
+  margin-bottom: 20px;
+}
+.footer__text {
+  line-height: 2;
+  color: rgba(34, 33, 54, 0.7);
+}
+.footer__text_mb:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer__row .footer__title {
+  margin-bottom: 10px;
+}
+.footer__row:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer__row_aic {
+  display: flex;
+  align-items: center;
+}
+.footer__form {
+  position: relative;
+}
+.footer__input {
+  border: none;
+  background: #ecf0fc;
+  border-radius: 9px;
+  font-size: 14px;
+  color: rgba(34, 33, 54, 0.8);
+  padding: 12px 20px;
+  width: 100%;
+  padding-right: 40px;
+}
+.footer__input:focus {
+  outline: 1px solid #1E1C31;
+}
+.footer__button {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+}
+.footer__button svg {
+  fill: #4270EC;
+}
+.footer__link {
+  text-decoration: none;
+}
+.footer__link:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding: 60px 0;
+  }
+  .footer__container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .footer__col {
+    flex: 0 0 280px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0px;
+  }
+}
