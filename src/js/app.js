@@ -58,9 +58,9 @@ let startX = 0;
 let endX = 0;
 
 const swipeSlider = () => {
-	if(startX < endX) { // left
+	if(startX < endX && (startX - endX) < -70) { // left
 		currentSlide <= 0 ? currentSlide = 0 : currentSlide--;
-	} else { // right
+	} else if((startX - endX) > 70) { // right
 		currentSlide >= sliderSlides.length - 1 ? currentSlide = (sliderSlides.length - 1) : currentSlide++;
 	}
 	moveSlider();
