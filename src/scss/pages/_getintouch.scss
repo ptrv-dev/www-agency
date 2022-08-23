@@ -33,12 +33,7 @@
 .container {
 }
 .button {
-	// .button_white
-
-	&_white {
-		background: $white;
-		color: $blue;
-	}
+	
 }
 @media (max-width: calc($container-width + 2 * $container-padding)) {
     .getintouch {

@@ -107,8 +107,17 @@
 
 	&__link {
 		text-decoration: none;
+		svg {
+			fill: $black;
+			transition: fill .3s;
+		}
 		&:not(:last-child) {
 			margin-right: 20px;
+		}
+		&:hover {
+			svg {
+				fill: $blue;
+			}
 		}
 	}
 }
